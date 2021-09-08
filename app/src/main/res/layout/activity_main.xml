@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
     <RelativeLayout
         android:id="@+id/container_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
     </RelativeLayout>
     <!--功能菜单-->
     <LinearLayout
@@ -28,8 +29,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@string/nav_icon_size"
-                android:layout_height="@string/nav_icon_size"
+                android:layout_width="@dimen/nav_icon_size"
+                android:layout_height="@dimen/nav_icon_size"
                 android:background="@drawable/menu_find_icon_selector" />
 
             <TextView
@@ -37,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:text="发现"
                 android:textColor="#bfbfbf"
-                android:textSize="@string/nav_text_size" />
+                android:textSize="@dimen/nav_text_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,8 +50,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@string/nav_icon_size"
-                android:layout_height="@string/nav_icon_size"
+                android:layout_width="@dimen/nav_icon_size"
+                android:layout_height="@dimen/nav_icon_size"
                 android:background="@drawable/menu_home_icon_selector" />
 
             <TextView
@@ -58,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:text="首页"
                 android:textColor="#bfbfbf"
-                android:textSize="@string/nav_text_size" />
+                android:textSize="@dimen/nav_text_size" />
         </LinearLayout>
 
         <LinearLayout
@@ -70,8 +71,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="@string/nav_icon_size"
-                android:layout_height="@string/nav_icon_size"
+                android:layout_width="@dimen/nav_icon_size"
+                android:layout_height="@dimen/nav_icon_size"
                 android:background="@drawable/menu_my_icon_selector" />
 
             <TextView
@@ -79,8 +80,8 @@
                 android:layout_height="wrap_content"
                 android:text="我的"
                 android:textColor="#bfbfbf"
-                android:textSize="@string/nav_text_size" />
+                android:textSize="@dimen/nav_text_size" />
         </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
