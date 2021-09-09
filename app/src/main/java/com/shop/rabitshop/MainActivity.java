@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.shop.rabitshop.fragment.FindFragment;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mMenuMain= (LinearLayout) this.findViewById(R.id.menu_main);
         mMenuFind= (LinearLayout) this.findViewById(R.id.menu_find);
         mMenuMy= (LinearLayout) this.findViewById(R.id.menu_my);
+
 
         mMenuMain.setOnClickListener(this);
         mMenuFind.setOnClickListener(this);
